@@ -8,3 +8,4 @@ if(Users::UserName()['login'] !== 'admin') {
 else
 ?>
 <div><a href="/admin/addGame"> Додати гру</a></div>
+<div><a href="/admin/deleteGame"> Видалити гру</a></div>

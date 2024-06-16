@@ -39,20 +39,20 @@ use models\Users;
 
         <div class="header-global">
             <div class="logo-header">
-                <div style="display: flex;align-items: center;justify-content: center;height: 100%">PERFECTRUNS</div>
+                <div style="display: flex;align-items: center;justify-content: center;height: 100%">PERFECTRUN</div>
             </div>
             <div class="link-container">
-                <a class="link-header" href="http://perfectruns/">Main Page </a>
-                <a class="link-header" href="http://perfectruns/games">Games </a>
-                <a class="link-header" href="http://perfectruns/users/profile">Profile </a>
-                <a class="link-header" href="http://perfectruns/favorites">Favorites </a>
-                <a class="link-header" href="http://perfectruns/categories">Categories</a>
-                <a class="link-header" href="http://perfectruns/community">Community</a>
+                <a class="link-header" href="/perfectrun">Main Page </a>
+                <a class="link-header" href="/games">Games </a>
+                <a class="link-header" href="/users/profile">Profile </a>
+                <a class="link-header" href="/favorites">Favorites </a>
+                <a class="link-header" href="/categories">Categories</a>
+                <a class="link-header" href="/community">Community</a>
                 <?php
                 if (Users::IsUserLogged())
                     if (Users::UserName()['login'] == 'admin') :
                         ?>
-                        <a class="link-header" href="http://perfectruns/admin/index">admin</a>
+                        <a class="link-header" href="/admin/index">admin</a>
                     <?php endif; ?>
             </div>
             <?php if (!Users::IsUserLogged()) : ?>
